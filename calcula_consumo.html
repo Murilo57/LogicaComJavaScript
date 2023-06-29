@@ -1,0 +1,37 @@
+<h3>Álcool ou Gasolina?</h3>
+
+<script>
+ var carro = 40
+ var carro2 = 40
+ var caminhoComGasolina = 480
+ var caminhoComAlcool = 300
+ var calculoCarro = caminhoComGasolina / carro
+ var calculoCarro2 = caminhoComAlcool / carro2 
+ 
+ //Função para pular linha
+ var pulaLinha = function () {
+        document.write('<hr>')
+ }
+
+    document.write("Ambos os carros tem um tanque de 40 litros, o calculo é com base que o carro a gasolina andou 480 KM e o ao Alcool 300 KM ")
+    pulaLinha()
+    document.write(`Calculo de consumo com Gasolina: ${calculoCarro.toFixed(2)}`)
+    pulaLinha()
+    document.write(`Calculo de consumo com Alcool: ${calculoCarro2.toFixed(2)}`)
+    pulaLinha()
+    document.write('<br>')
+
+    document.write('Agora o preço da gasolina está R$2.90 e o alcool R$ 2.40. Qual o preço por Kilometro, tanto do álcool quanto da gasolina?')
+    pulaLinha()
+
+ var precoDaGasolina = 2.90
+ var precoDoAlcool = 2.90
+ var precoPorKilometroG = calculoCarro / precoDaGasolina
+ var precoPorKilometroA = calculoCarro2 / precoDoAlcool
+
+    document.write(`O preço por Kilometro com Gasolina: ${precoPorKilometroG.toFixed(2)}` )
+    pulaLinha()
+    document.write(`O preço por Kilometro com Alcool: ${precoPorKilometroA.toFixed(2)}`)
+    pulaLinha()
+
+</script>

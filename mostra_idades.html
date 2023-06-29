@@ -1,0 +1,34 @@
+<script>
+//Função para uma separar e adicionar uma linha ao meio
+var pular = function() {
+    document.write('<br>')
+    document.write('<hr>')
+    document.write('<br>')
+}
+
+var pulaLinha = function () {
+    document.write('<br>')
+}
+
+var ano = 2023
+    
+    document.write("<h2>Sua idade</h2>")
+    pulaLinha()
+    document.write("<big>Eu nasci em:</big> " + (ano - 22))
+    pulaLinha()
+    document.write("<big>Adriano nasceu em:</big> " + (ano - 26))
+    pulaLinha()
+    document.write("<big>Paulo nasceu em:</big> " + (ano - 32))
+    pulaLinha()
+
+//Função para pular linha após a frase
+var mostra = function(frase) {
+    document.write(frase)
+    pulaLinha()
+}   
+
+
+console.log('essa mensagem aparece somente pro desenvolvedor')
+
+
+</script>

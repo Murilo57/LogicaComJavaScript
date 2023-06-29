@@ -1,0 +1,39 @@
+<script>    
+var pulaLinha = function() {
+    document.write('<br>')
+}   
+var pulaDivide = function(){
+    document.write('<br><hr><br>')
+}
+
+//Função para calcular o IMC
+var calculoIMC = function(peso, altura) {
+    var imc2 = peso / (altura * altura)
+    document.write(`Seu IMC é : ${imc2.toFixed(2)}`)
+}
+
+    document.write('<h1>Calculo de IMC</h1>')
+    pulaLinha()
+    document.write('O calculo de IMC é pegando o peso e dividindo a altura pelo quadrado exemplo: ')
+    pulaLinha()
+    document.write('<h2>Peso / (Altura / Altura)</h2>')
+    pulaLinha()
+
+// var peso = 71
+// var altura = 1.71
+// var IMC = peso / (altura * altura)
+//     document.write(`O seu peso sendo ${peso} e altura ${altura}, o seu IMC é: <h2> ${IMC.toFixed(2)} </h3>`)
+
+// calculoIMC(78, 1.85)
+// pulaDivide()
+var mensagem = alert("Vamos calcular seu IMC!")
+var peso = prompt("Qual o seu peso ?")
+var altura = prompt("Qual sua altura ?")
+var IMC = calculoIMC(peso, altura)
+documento.write(`O seu IMC é de: ${IMC}`)
+
+
+    document.write('o IMC menor que 18.5 indica que você esta muito magro e acima de 35 é obesidade severa, ')
+
+pulaDivide()    
+</script>
