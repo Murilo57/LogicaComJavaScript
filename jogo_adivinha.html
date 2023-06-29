@@ -1,0 +1,21 @@
+<script>
+var pulaLinha = function() {
+    document.write('<br>')
+}
+
+    document.write("<h1>Jogo de adivinha 0 a 100</h1>")
+    pulaLinha()
+
+    var numeroPensadoDecimal = Math.random() * 100
+    var numeroPensado = numeroPensadoDecimal.toFixed(0)
+
+var chute = prompt("Ja pensei. Qual numer você acha que é ?")
+
+if (chute == numeroPensado) {
+    document.write(`Parabéns você acertou o numero ! <br> E esse numero é: ${numeroPensado}` )
+}
+
+if (chute != numeroPensado) {
+    document.write(`Você errou! O numero pensado foi: ${numeroPensado}`)
+}
+</script>

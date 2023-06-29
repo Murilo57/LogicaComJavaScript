@@ -1,0 +1,14 @@
+<script>
+var mostra = function(frase) {
+    document.write(frase + "<br>")
+}
+var anoInicio = prompt("Qual o ano de inicio: ")
+var anoLimite = prompt("Qual o ano limite ?")
+
+while (Number(anoInicio) <= Number(anoLimite)) {
+    mostra(anoInicio + " tem copa!")
+    anoInicio = Number(anoInicio) + 4
+}
+
+mostra(`Ufa! Esses foram os anos de copa até ${anoLimite}`)
+</script>

@@ -1,0 +1,47 @@
+<script>
+function pulaLinha() {
+    document.write('<br>')
+}
+
+var mostra = function(frase) {
+    document.write(frase)
+    pulaLinha()
+}
+
+var calculoPontos = function(vitoria, empate) {
+    return (vitoria * 3) + Number(empate)
+}
+
+mostra("<h1>Pontos de futebol</h1>")
+pulaLinha()
+mostra("Verificando se o CDC esta melhor que o time LVFC, eles tem 32 pontos. Considerando que cada vitoria vale 3 pontos e empate 1 ponto.")
+pulaLinha()
+
+var vitorias = prompt("Quantos jogos o CDC Futebol Clube venceu?")
+var empates = prompt("Quantos jogos o CDC Futebol Clube empatou?")
+var pontosCasa = calculoPontos(vitorias, empates) 
+
+var vitoriasLVFC = prompt("Quantas vitorias o LVFC tem?")
+var empatesLVFC = prompt("Quantos empates o LVFC tem ?")
+var LVFC = calculoPontos(vitoriasLVFC, empatesLVFC)
+
+
+if (pontosCasa < LVFC) {
+    mostra("Nosso time esta indo PIOR que o LVFC")
+} 
+
+if (pontosCasa > LVFC) {
+    mostra("Nosso time esta MELHOR que o LVFC")
+}
+
+if (pontosCasa == LVFC) {
+    mostra("Nosso time esta EMPATADO com o LVFC")
+}
+
+pulaLinha()
+mostra("Nosso time tem " + pontosCasa +  " pontos!")
+
+
+
+
+</script>
