@@ -1,0 +1,29 @@
+<canvas id="tela" width="600" height="400"></canvas>
+<script>
+    var tela = document.getElementById("tela")
+    var c = tela.getContext("2d")
+
+    //Retangulo verde
+    c.fillStyle = "green"
+    //O primeiro numero é o X e o segundo é o Y, os dois ultimos no parametro é a largura = 200 e a altura = 400    
+    c.fillRect(0, 0, 200, 400)
+
+    //Retangulo vermelho
+    c.fillStyle = "red"
+    c.fillRect(400, 0, 200, 400)
+
+    //Triangulo cinza
+    c.fillStyle = "gray"
+    c.beginPath()
+    c.moveTo(300, 200)    
+    c.lineTo(200, 400)
+    c.lineTo(400, 400)
+    c.fill()
+
+    //Circulo azul pequeno no centro
+    c.fillStyle = "blue"
+    c.beginPath()
+    c.arc(300, 200, 50, 0, 2*3.14)
+    c.fill()
+
+</script>

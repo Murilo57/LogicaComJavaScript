@@ -1,0 +1,32 @@
+<input type="text" id="numero">
+<input type="submit" id="adivinhar" value="Compare com o meu segredo">
+
+<script>
+    var mostra = function(frase){
+        document.write(frase + '<br>')
+    }
+    var pularLinha = function() {
+        document.write('<br>')
+    }    
+var segredos = [10, 25, 32, 37, 48, 65]
+
+    var caixaDoNumero = document.getElementById("numero")
+
+var botaoClicado = function() {
+    for(var i = 0; i < segredos.length; i = i + 1){
+        if(segredos[i] == caixaDoNumero.value) {
+            alert(`Parabéns! Você acertou um dos números secretos! Você acertou o numero ${segredos[i]}`)
+            return
+        }
+    }
+    alert("Infelizmente você errou!")
+}
+
+var botaoAdivinhar = document.getElementById("adivinhar")
+    botaoAdivinhar.onclick = botaoClicado
+    
+//A função do push é adicionar um conteudo no final da Array, exemplo:
+//segredos[10,20,30]
+//segredos.push(44)
+//a array segredos agora tera os seguintes conteudo: segredos[10,20,30,44]
+</script>
