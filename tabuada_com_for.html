@@ -1,0 +1,19 @@
+<script>
+//Tabuada feita com laço for
+var mostra = function(frase) {
+    document.write(frase + '<br>')
+}
+
+var pulaLinha = function() {
+    document.write('<br>')
+}
+
+var numero = prompt('Digite um numero de 1 a 10 para sabar a tabuada')
+
+mostra('Função feita com For')
+pulaLinha()
+//Tabuada feita com For
+for (var multiplicador = 1 ; multiplicador <= 10 ; multiplicador++) {
+    mostra(`${numero} vezes ${multiplicador} é igual a ` + numero * multiplicador)
+}
+</script>

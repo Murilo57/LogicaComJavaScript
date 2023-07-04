@@ -7,7 +7,7 @@ var anoLimite = prompt("Qual o ano limite ?")
 
 while (Number(anoInicio) <= Number(anoLimite)) {
     mostra(anoInicio + " tem copa!")
-    anoInicio = Number(anoInicio) + 4
+    anoInicio = parseInt(anoInicio) + 4
 }
 
 mostra(`Ufa! Esses foram os anos de copa até ${anoLimite}`)

@@ -1,0 +1,25 @@
+<script>
+var pulaLinha = function() {
+    document.write('<br>')
+}
+
+var mostra = function(frase) {
+    document.write(frase)
+}
+
+var numero = prompt("Digite um numero de 1 a 10 para tabuada")
+
+var multiplicador = 1
+
+mostra('Função feita com While')
+pulaLinha()
+//Tabuada feita com while
+while (multiplicador <= 10) {
+    mostra(`${numero} vezes ${multiplicador} é igual a ` + numero * multiplicador)
+    pulaLinha()
+    multiplicador = multiplicador + 1
+}
+pulaLinha()
+
+
+</script>

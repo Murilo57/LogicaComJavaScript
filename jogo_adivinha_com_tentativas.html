@@ -1,0 +1,28 @@
+<script>
+    var mostra = function(frase) {
+        document.write(frase + '<br>')
+    }
+    var pularLinha = function() {
+        document.write('<br>')
+    }
+
+mostra ('<h2>Jogo de adivinha com tentativas</h2>')
+
+ var numeroPensado = Math.round(Math.random() * 100)
+ var numeroDaTentativa = 1
+ 
+ while(numeroDaTentativa <= 3) {
+    var chute = prompt("Qual você acha que é ?")
+
+    if(chute == numeroPensado) {
+        mostra(`Parabéns você acerto! O numero pensado foi: ${numeroPensado}`)
+        break
+    } else if (chute <= numeroPensado){
+        mostra(`Você errou, o numero foi menor. O numero pensado foi: ${numeroPensado}`)
+    } else if (chute >= numeroPensado) {
+       mostra(`Você errou, o numero foi maior. O numero pensado foi: ${numeroPensado}`) 
+    }
+
+    numeroDaTentativa++
+ }
+</script>
